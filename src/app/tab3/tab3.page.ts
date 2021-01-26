@@ -9,6 +9,8 @@ import {ModalController} from '@ionic/angular';
 export class Tab3Page implements AfterViewChecked{
   constructor(public modalController: ModalController) {}
 
+  //TODO: Add Systeme d'alerte en cas de probleme
+
   async presentModal() {
     const modal = await this.modalController.create({
       component: ModalPage,
@@ -24,6 +26,8 @@ export class Tab3Page implements AfterViewChecked{
 
 }
 
+
+//TODO: Améliorer la modal feedback
 @Component({
   selector: 'app-modal-page',
   template: `

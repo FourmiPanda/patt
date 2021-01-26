@@ -1,16 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Social
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button id="changeText">
+        <ion-icon slot="start" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar></ion-searchbar>
+  <ion-card>
+    <img src="/assets/Among_us.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>27/01/2021 <ion-icon name="time-outline"></ion-icon> </ion-card-subtitle>
+      <ion-card-title>Among Us</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+    </ion-card-content>
+  </ion-card>
 
+  <ion-card>
+    <img src="/assets/marathon.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>01/02/2021</ion-card-subtitle>
+      <ion-card-title>Marathon</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="/assets/repas.jpg"  style="filter: grayscale(100%);"/>
+    <ion-card-header>
+      <ion-card-subtitle>24/12/2020</ion-card-subtitle>
+      <ion-card-title>Repas de noël</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
