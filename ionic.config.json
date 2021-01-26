@@ -1,0 +1,8 @@
+{
+  "name": "patt",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "017edee5"
+}
