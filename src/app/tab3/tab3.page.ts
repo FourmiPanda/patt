@@ -1,5 +1,5 @@
 import {AfterViewChecked, Component, OnInit} from '@angular/core';
-import {ModalController} from '@ionic/angular';
+import {ModalController, ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -23,6 +23,8 @@ export class Tab3Page implements AfterViewChecked{
     const chat = document.querySelector('#chat');
     chat.scrollTop = chat.scrollHeight;
   }
+
+
 
 }
 

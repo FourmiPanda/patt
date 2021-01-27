@@ -4,7 +4,7 @@
       Social
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button id="changeText">
+      <ion-button id="changeText" (click)="presentModal()">
         <ion-icon slot="start" name="settings-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -20,7 +20,15 @@
       <ion-card-title>Among Us</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+      <div>
+        Rendez-vous le 27 janvier 2021 pour la 13ème soirée Among Us !
+      </div>
+
+      <div>
+        <ion-toggle checked></ion-toggle>
+        <span>Je participe</span>
+      </div>
+
     </ion-card-content>
   </ion-card>
 
@@ -31,18 +39,42 @@
       <ion-card-title>Marathon</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+      <div>
+        Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+      </div>
+
+      <div>
+        <ion-toggle></ion-toggle>
+        <span>Je participe</span>
+      </div>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <img src="/assets/repas.jpg"  style="filter: grayscale(100%);"/>
     <ion-card-header>
-      <ion-card-subtitle>24/12/2020</ion-card-subtitle>
+      <ion-card-subtitle>
+        <span>24/12/2020</span>
+      </ion-card-subtitle>
       <ion-card-title>Repas de noël</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Rendez-vous les 01 et 02 février 2021 pour la 40ème édition de l’Abalone Marathon de Nantes.
+      <div>
+        Le 24 décembre à 12h, repas de noël avec tout les collègues !
+      </div>
+
+      <div>
+        <ion-toggle disabled></ion-toggle>
+        <span>Je participe</span>
+      </div>
+
     </ion-card-content>
+
   </ion-card>
+
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
